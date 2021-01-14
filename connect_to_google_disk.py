@@ -46,7 +46,4 @@ def check_new_files():
         time.sleep(4)
     driver1.close()
     return new_files
-<<<<<<< HEAD
-=======
 
->>>>>>> 0155d66b1ac7ff7cd017ff4335cd8161fffa6a4b
