@@ -1,0 +1,75 @@
+
+
+Thu Jan 14 16:22:44 2021
+<<ERROR polling>>
+Traceback (most recent call last):
+  File "C:/Users/денис/Desktop/forum/instagram_post_bot/bot_teleg_control.py", line 72, in telegram_polling
+    bot.polling(none_stop=True, timeout=60) #constantly get messages from Telegram
+AttributeError: 'Bot' object has no attribute 'polling'
+
+<<ERROR polling>>
+
+Thu Jan 14 16:26:08 2021
+<<ERROR polling>>
+Traceback (most recent call last):
+  File "C:/Users/денис/Desktop/forum/instagram_post_bot/bot_teleg_control.py", line 72, in telegram_polling
+    bot.start_polling(dp,none_stop=True, timeout=60, skip_updates=True) #constantly get messages from Telegram
+AttributeError: 'Bot' object has no attribute 'start_polling'
+
+<<ERROR polling>>
+
+Thu Jan 14 16:27:41 2021
+<<ERROR polling>>
+Traceback (most recent call last):
+  File "C:/Users/денис/Desktop/forum/instagram_post_bot/bot_teleg_control.py", line 73, in telegram_polling
+    executor.start_polling(dp,none_stop=True, timeout=60, skip_updates=True) #constantly get messages from Telegram
+TypeError: start_polling() got an unexpected keyword argument 'none_stop'
+
+<<ERROR polling>>
+
+Thu Jan 14 17:58:59 2021
+<<ERROR polling>>
+Traceback (most recent call last):
+  File "bot_teleg_control.py", line 75, in telegram_polling
+    executor.start_polling(dp,skip_updates=True) #constantly get messages from Telegram
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiogram\utils\executor.py", line 41, in start_polling
+    executor.start_polling(reset_webhook=reset_webhook, timeout=timeout, relax=relax, fast=fast)
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiogram\utils\executor.py", line 317, in start_polling
+    loop.run_until_complete(self._shutdown_polling())
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\asyncio\base_events.py", line 603, in run_until_complete
+    self.run_forever()
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\asyncio\base_events.py", line 570, in run_forever
+    self._run_once()
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\asyncio\base_events.py", line 1859, in _run_once
+    handle._run()
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\asyncio\events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 388, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 225, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiogram\utils\executor.py", line 312, in start_polling
+    loop.run_forever()
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\asyncio\base_events.py", line 570, in run_forever
+    self._run_once()
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\asyncio\base_events.py", line 1859, in _run_once
+    handle._run()
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\asyncio\events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 246, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\денис\AppData\Local\Programs\Python\Python38-32\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "bot_teleg_control.py", line 42, in cmd_start
+    check_new_files()
+  File "C:\Users\денис\Desktop\forum\instagram_post_bot\connect_to_google_disk.py", line 28, in check_new_files
+    time.sleep(4)
+KeyboardInterrupt
+
+<<ERROR polling>>
